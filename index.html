@@ -11,37 +11,31 @@
 </head>
 
 <body>
-    <nav>
-        <div id="page-logo" class="no-select text-center">Fast-Clicker</div>
-        
-        <a href="leaderboards.html">
-            <div class="no-select text-center" id="leaderboards">Leaderboards</div>
-        </a>
-        
-        <a href="leaderboards.html">
+    <div class="col-flex-container" id="main-area">
+
+        <nav class="row-flex-container-spaced-between">
+            <div id="page-logo-text" class="no-select text-center">Fast-Clicker</div>
+            
             <div class="no-select text-center neumorphic-box" id="leaderboards-icon">
-                <img src="images/trophy.svg" alt="Leaderboards">
+                <a href="leaderboards.html"> <img src="images/trophy.svg" alt="Leaderboards"> </a>
             </div>
-        </a>
+            
+        </nav>
+    
+        <div class="row-flex-container" id="ccc-box">
 
-    </nav>
+            <div class="no-select text-center neumorphic-box" id="clicks">0 <br> clicks</div>
 
+            <div class="no-select text-center neumorphic-box" id="clock">15s</div>
 
-    <div class="no-select text-center neumorphic-box" id="clock">15s</div>
-
-    <div class="no-select text-center neumorphic-box" id="clicks">0 <br> clicks</div>
-
-    <div class="no-select text-center neumorphic-box no-highlight" id="clickbox">Click here</div>
-
-    <div class="no-select text-center neumorphic-box" id="cps-box">0 <br> CPS</div>
-
-    <!-- <a href="index.html">
-        <div class="hidden neumorphic-box" id="reset">
-            <img id="resetsvg" src="images/restart.svg" alt="reset">
+            <div class="no-select text-center neumorphic-box" id="cps-box">0 <br> CPS</div>
         </div>
-    </a> -->
 
-    <footer class="no-select text-center">The clock starts as soon as you click</footer>
+        <div class="no-select text-center neumorphic-box no-highlight" id="clickbox">Click here</div>
+        
+        <footer class="no-select text-center">The clock starts as soon as you click</footer>
+    </div>
+
 </body>
 
 </html>

@@ -3,7 +3,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     text-align: center;
-    line-height: 1.2em;
+    line-height: 5vw;
 }
 
 .neumorphic-box {
@@ -36,15 +36,9 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
-#page-logo {
+#page-logo-text {
     font-size: 8vw;
-    position: absolute;
-    padding: 2%;
-    width: 46vw;
-}
-
-#leaderboards {
-    visibility: hidden;
+    margin-left: 4vw;
 }
 
 nav img {
@@ -53,77 +47,71 @@ nav img {
 }
 
 #leaderboards-icon {
-    position: absolute;
     visibility: visible;
     height: 6vh;
     width: 6vh;
-    top: 2vh;
-    right: 2vh;
     border-radius: 50%;
+    margin-right: 4vw;;
+}
+
+.row-flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+.row-flex-container-spaced-between {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.col-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
 }
 
 #clicks {
     visibility: visible;
-    height: 20vw;
-    width: 20vw;
+    min-height: 22vw;
+    min-width: 22vw;
     border-radius: 50%;
-    position: absolute;
-    top: 20vh;
-    left: 10vw;
+    font-size: 4vw;
 }
 
 #clock {
     visibility: visible;
-    height: 28vw;
-    width: 28vw;
+    min-height: 30vw;
+    min-width: 30vw;
     border-radius: 50%;
-    position: absolute;
-    top: 18vh;
-    left: 36vw;
-    font-size: 6.25vw;
+    font-size: 8vw;
 }
 
 #cps-box {
     visibility: visible;
-    height: 20vw;
-    width: 20vw;
+    min-height: 22vw;
+    min-width: 22vw;
     border-radius: 50%;
-    position: absolute;
-    top: 20vh;
-    left: 70vw;
+    font-size: 4vw;
 }
-
-/* #reset {
-    height: 20vw;
-    width: 20vw;
-    border-radius: 50%;
-    position: absolute;
-    top: 20vh;
-    left: 40vw;
-}
-
-
-#resetsvg {
-    width: 20vw;
-} */
 
 #clickbox {
-    position: absolute;
     width: 80vw;
-    height: 40vh;
-    left: 10vw;
-    bottom: 20vh;
+    height: 35vh;
     border-radius: 16px;
     font-size: 8vw;
 }
 
 footer {
-    position: absolute;
-    bottom: 2vh;
     height: 8vh;
     width: 80vw;
-    left: 10vw;
-    bottom: 6vh;
     border-radius: 16px;
     color: rgba(158, 163, 172, 0.829);
 }
