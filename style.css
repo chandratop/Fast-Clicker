@@ -1,11 +1,14 @@
 body {
-    background-color: #212121;
-    font-family: 'Courier New', Courier, monospace;
+    background-color: #E0E5EC;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    text-align: center;
+    line-height: 1.2em;
 }
 
-nav img, #leaderboards-icon {
-    visibility: hidden;
-    position: absolute;
+.neumorphic-box {
+    background-color: #E0E5EC;
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
 }
 
 .no-select {
@@ -28,188 +31,99 @@ nav img, #leaderboards-icon {
     transition: 0.4s;
 }
 
-nav p {
-    color: whitesmoke;
-    font-size: 2vw;
-    width: 18vw;
-    height: 2vw;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    left: 1vw;
-    top: 2.5vh;
+.no-highlight {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
 }
 
-#clickbox {
-    /*box settings*/
-    height: 50vh;
-    width: 40vw;
-    background-color: rgba(0, 0, 0, 0.26);
-    border-radius: 16px;
-    position: relative;
-    top: 25vh;
-    left: 30vw;
-    /*text settings*/
-    font-size: 4em;
-    color: cornsilk;
-    /*font centering*/
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-    cursor: pointer;
-}
-
-#clock {
-    /*box sizing*/
-    width: 90vw;
-    /*box positioning*/
+#page-logo {
+    font-size: 8vw;
     position: absolute;
-    left: 5vw;
-    top: 12.5vh;
-    /* top: 20vh; */
-    /*font settings*/
-    font-size: 3em;
-    color: rgb(88, 88, 88);
+    padding: 2%;
+    width: 46vw;
 }
 
 #leaderboards {
-    /*box settings*/
-    width: 18vw;
-    border-radius: 16px;    
-    padding: 0;
-    margin: 0;
-    /*box position*/
+    visibility: hidden;
+}
+
+nav img {
+    visibility: visible;
+    height: 4vh;
+}
+
+#leaderboards-icon {
     position: absolute;
-    right: 1vw;
-    top: 2.5vh;
-    /*font settings*/
-    font-size: 2vw;
-    color: rgb(255, 255, 255);
-    transition: 0.25s;
-}
-
-#leaderboards:hover {
-    background-color: rgb(255, 140, 0);
-    color: black;
-    transition: 0.25s;
-}
-
-#resetsvg {
-    width: 15vh;
-}
-
-#reset {
-    background-color: rgb(88, 88, 88);
+    visibility: visible;
+    height: 6vh;
+    width: 6vh;
+    top: 2vh;
+    right: 2vh;
     border-radius: 50%;
-    width: 15vh;
-    height: 15vh;
-    position: absolute;
-    right: 10vw;
-    top: 42.5vh;
-    transition: 0.25s;
-}
-
-#reset:hover {
-    background-color: greenyellow;
-    transition: 0.25s;
 }
 
 #clicks {
-    /*box sizing*/
-    width: 25vw;
-    height: 20vh;
-    /*box positioning*/
+    visibility: visible;
+    height: 20vw;
+    width: 20vw;
+    border-radius: 50%;
     position: absolute;
-    left: 2.5vw;
-    top: 40vh;
-    /* top: 20vh; */
-    /*font settings*/
-    font-size: 3.5em;
-    color: rgb(88, 88, 88);
+    top: 20vh;
+    left: 10vw;
+}
+
+#clock {
+    visibility: visible;
+    height: 28vw;
+    width: 28vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 18vh;
+    left: 36vw;
+    font-size: 6.25vw;
+}
+
+#cps-box {
+    visibility: visible;
+    height: 20vw;
+    width: 20vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 20vh;
+    left: 70vw;
+}
+
+/* #reset {
+    height: 20vw;
+    width: 20vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 20vh;
+    left: 40vw;
+}
+
+
+#resetsvg {
+    width: 20vw;
+} */
+
+#clickbox {
+    position: absolute;
+    width: 80vw;
+    height: 40vh;
+    left: 10vw;
+    bottom: 20vh;
+    border-radius: 16px;
+    font-size: 8vw;
 }
 
 footer {
-    /*box dimensions*/
-    width: 50vw;
-    height:10vh;
-    /*box position*/
     position: absolute;
-    left: 25vw;
-    bottom: 12.5vh;
-    /*font settings*/
-    font-size: 1em;
-    color: rgb(223, 223, 223);
-}
-
-@media (max-width : 600px) {
-    nav img {
-        visibility: visible;
-        height: 4vh;
-    }
-
-    #leaderboards-icon {
-        visibility: visible;
-        background-color: darkgoldenrod;
-        position: absolute;
-        height: 5vh;
-        width: 5vh;
-        top: 2.6vh;
-        right: 3.6vh;
-        border-radius: 50%;
-    }
-
-    nav p {
-        color: whitesmoke;
-        font-size: 1.5em;
-        width: 45vw;
-        height: 4.75vh;
-        top: 3vh;
-        left: 3vh;
-    }
-
-    #clickbox {
-        height: 50vh;
-        width: 70vw;
-        left: 13.5vw;
-        font-size: 2em;
-        top: 22.5vh;
-    }
-
-    #clock {
-        font-size: 2em;
-        height: 10vh;
-        width: 15vw;
-        left: 25vw;
-        top: 10.5vh;
-    }
-
-    #clicks {
-        font-size: 2em;
-        height: 10vh;
-        width: 15vw;
-        top: 10.5vh;
-        left: 60vw;
-    }
-
-    footer {
-        width: 100vw;
-        bottom: 1vh;
-        left: 0vw;
-    }
-
-    #reset {
-        height: 15vw;
-        width: 15vw;
-        top: 78.5vh;
-        left: 42.5vw;
-        background-color: rgb(88, 88, 88));
-    }
-
-    #leaderboards {
-        display: none;
-    }
-
-    #resetsvg {
-        width: 15vw;
-    }
+    bottom: 2vh;
+    height: 8vh;
+    width: 80vw;
+    left: 10vw;
+    bottom: 6vh;
+    border-radius: 16px;
+    color: rgba(158, 163, 172, 0.829);
 }
