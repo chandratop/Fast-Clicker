@@ -1,2 +1,2 @@
 # Fast-Clicker
-Check how fast you can click
+How many click per second  can you do?
